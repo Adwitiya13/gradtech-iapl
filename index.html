@@ -1,0 +1,842 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GradTech Mechanical Engineering — IAPL Institute | Career Eligibility Check</title>
+<meta name="description" content="Check your GradTech Mechanical Engineering eligibility in 60 seconds. Built for Indian engineers working in UAE.">
+<style>
+  :root{
+    --navy:#0B1E3D;
+    --navy-deep:#071530;
+    --blue:#1659D6;
+    --blue-bright:#2B7CFF;
+    --ink:#0E1726;
+    --paper:#F6F8FC;
+    --white:#FFFFFF;
+    --line:#E2E8F4;
+    --slate:#5B6B85;
+    --amber:#E8A33D;
+    --good:#1C8A5C;
+    --warn:#C2410C;
+    --shadow: 0 20px 50px -20px rgba(11,30,61,0.35);
+    --radius: 14px;
+  }
+  *{box-sizing:border-box; margin:0; padding:0;}
+  html{scroll-behavior:smooth;}
+  body{
+    font-family:'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    background:var(--paper);
+    color:var(--ink);
+    line-height:1.5;
+    -webkit-font-smoothing:antialiased;
+    overflow-x:hidden;
+  }
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&display=swap');
+  h1,h2,h3,h4{font-family:'Fraunces', serif; font-weight:600; letter-spacing:-0.01em; color:var(--navy);}
+  .container{max-width:1120px; margin:0 auto; padding:0 24px;}
+  .eyebrow{
+    display:inline-flex; align-items:center; gap:8px;
+    font-size:12.5px; font-weight:700; letter-spacing:0.08em; text-transform:uppercase;
+    color:var(--blue); background:rgba(22,89,214,0.08);
+    padding:7px 14px; border-radius:100px; border:1px solid rgba(22,89,214,0.18);
+  }
+  .eyebrow .dot{width:6px; height:6px; border-radius:50%; background:var(--blue); animation:pulse 1.8s infinite;}
+  @keyframes pulse{0%,100%{opacity:1;} 50%{opacity:0.3;}}
+  a{color:inherit;}
+  img{max-width:100%; display:block;}
+  ::selection{background:var(--blue-bright); color:white;}
+
+  /* ===== NAV ===== */
+  .nav{
+    position:sticky; top:0; z-index:100;
+    background:rgba(246,248,252,0.88); backdrop-filter:blur(12px);
+    border-bottom:1px solid var(--line);
+  }
+  .nav-inner{display:flex; align-items:center; justify-content:space-between; padding:16px 24px;}
+  .logo{font-family:'Fraunces',serif; font-weight:700; font-size:20px; color:var(--navy); display:flex; align-items:center; gap:9px;}
+  .logo-mark{
+    width:34px; height:34px; border-radius:9px;
+    background:linear-gradient(135deg, var(--blue) 0%, var(--navy) 100%);
+    display:flex; align-items:center; justify-content:center; color:white; font-size:15px; font-weight:800;
+    box-shadow:0 6px 14px -4px rgba(22,89,214,0.5);
+  }
+  .nav-cta{
+    background:var(--navy); color:white; border:none; padding:11px 20px; border-radius:9px;
+    font-weight:600; font-size:14px; cursor:pointer; transition:all .2s ease; white-space:nowrap;
+  }
+  .nav-cta:hover{background:var(--blue); transform:translateY(-1px);}
+
+  /* ===== HERO ===== */
+  .hero{
+    position:relative;
+    padding:64px 0 56px;
+    background:
+      radial-gradient(900px 500px at 85% -10%, rgba(43,124,255,0.16), transparent 60%),
+      radial-gradient(700px 400px at -10% 110%, rgba(11,30,61,0.10), transparent 60%),
+      var(--paper);
+    overflow:hidden;
+  }
+  .hero-grid{display:grid; grid-template-columns:1.15fr 0.85fr; gap:48px; align-items:center;}
+  .hero h1{
+    font-size:clamp(32px, 4.6vw, 50px);
+    line-height:1.08;
+    margin:18px 0 18px;
+    letter-spacing:-0.02em;
+  }
+  .hero h1 .accent{color:var(--blue);}
+  .hero-sub{
+    font-size:17.5px; color:var(--slate); max-width:540px; margin-bottom:28px; line-height:1.55;
+  }
+  .hero-sub strong{color:var(--ink);}
+  .btn-primary{
+    display:inline-flex; align-items:center; gap:10px;
+    background:var(--navy); color:white; border:none;
+    padding:17px 28px; border-radius:11px; font-size:16px; font-weight:700;
+    cursor:pointer; transition:all .25s cubic-bezier(.2,.8,.2,1);
+    box-shadow:0 14px 30px -10px rgba(11,30,61,0.5);
+  }
+  .btn-primary:hover{background:var(--blue); transform:translateY(-2px); box-shadow:0 18px 36px -10px rgba(22,89,214,0.55);}
+  .btn-primary svg{transition:transform .25s ease;}
+  .btn-primary:hover svg{transform:translateX(4px);}
+  .hero-urgency{
+    display:flex; align-items:center; gap:10px; margin-top:18px;
+    font-size:13.5px; color:var(--warn); font-weight:600;
+  }
+  .hero-urgency svg{flex-shrink:0;}
+  .hero-stats{display:flex; gap:28px; margin-top:36px; flex-wrap:wrap;}
+  .hero-stat-num{font-family:'Fraunces',serif; font-size:26px; font-weight:700; color:var(--navy);}
+  .hero-stat-label{font-size:12.5px; color:var(--slate); margin-top:2px;}
+
+  .hero-card{
+    background:var(--white); border-radius:20px; padding:30px;
+    box-shadow:var(--shadow); border:1px solid var(--line);
+    position:relative;
+  }
+  .hero-card-badge{
+    position:absolute; top:-14px; right:24px;
+    background:var(--amber); color:var(--navy-deep); font-size:12px; font-weight:800;
+    padding:7px 14px; border-radius:100px; letter-spacing:0.03em;
+    box-shadow:0 8px 18px -6px rgba(232,163,61,0.6);
+  }
+  .hero-card h3{font-size:19px; margin-bottom:4px;}
+  .hero-card p.small{font-size:13.5px; color:var(--slate); margin-bottom:20px;}
+  .mini-row{display:flex; justify-content:space-between; align-items:center; padding:13px 0; border-bottom:1px solid var(--line); font-size:14.5px;}
+  .mini-row:last-of-type{border-bottom:none;}
+  .mini-row .label{color:var(--slate);}
+  .mini-row .val{font-weight:700; color:var(--ink);}
+  .progress-track{height:8px; background:var(--line); border-radius:100px; overflow:hidden; margin:18px 0 8px;}
+  .progress-fill{height:100%; width:62%; background:linear-gradient(90deg, var(--blue), var(--blue-bright)); border-radius:100px;}
+
+  /* ===== SECTION SHARED ===== */
+  section{padding:88px 0;}
+  .section-head{max-width:680px; margin:0 auto 48px; text-align:center;}
+  .section-head .eyebrow{margin-bottom:16px;}
+  .section-head h2{font-size:clamp(28px, 3.6vw, 38px); line-height:1.15;}
+  .section-head p{color:var(--slate); font-size:16.5px; margin-top:14px;}
+
+  /* ===== QUIZ ===== */
+  .quiz-section{background:var(--white); border-top:1px solid var(--line); border-bottom:1px solid var(--line);}
+  .quiz-wrap{
+    max-width:660px; margin:0 auto;
+    background:linear-gradient(180deg, var(--navy) 0%, var(--navy-deep) 100%);
+    border-radius:24px; padding:0; overflow:hidden;
+    box-shadow:0 30px 70px -25px rgba(7,21,48,0.55);
+  }
+  .quiz-top{padding:30px 32px 0;}
+  .quiz-top-row{display:flex; justify-content:space-between; align-items:center; margin-bottom:18px;}
+  .quiz-step-label{color:rgba(255,255,255,0.65); font-size:13px; font-weight:600; letter-spacing:0.03em;}
+  .quiz-score-preview{color:var(--amber); font-size:13px; font-weight:700;}
+  .quiz-bar-track{height:5px; background:rgba(255,255,255,0.15); border-radius:100px; overflow:hidden; margin-bottom:28px;}
+  .quiz-bar-fill{height:100%; background:linear-gradient(90deg, var(--blue-bright), var(--amber)); border-radius:100px; transition:width .5s cubic-bezier(.2,.8,.2,1); width:0%;}
+  .quiz-body{padding:0 32px 32px; min-height:340px;}
+  .quiz-q{display:none; animation:fadeUp .45s ease forwards;}
+  .quiz-q.active{display:block;}
+  @keyframes fadeUp{from{opacity:0; transform:translateY(14px);} to{opacity:1; transform:translateY(0);}}
+  .quiz-q h3{color:white; font-size:23px; margin-bottom:8px; line-height:1.3;}
+  .quiz-q .q-sub{color:rgba(255,255,255,0.6); font-size:14px; margin-bottom:26px;}
+  .opt-grid{display:flex; flex-direction:column; gap:11px;}
+  .opt{
+    display:flex; align-items:center; justify-content:space-between; gap:12px;
+    background:rgba(255,255,255,0.05); border:1.5px solid rgba(255,255,255,0.14);
+    border-radius:12px; padding:16px 18px; cursor:pointer;
+    transition:all .2s ease; color:white; font-size:15.5px; font-weight:500;
+    text-align:left; width:100%;
+  }
+  .opt:hover{background:rgba(43,124,255,0.18); border-color:var(--blue-bright); transform:translateX(3px);}
+  .opt.selected{background:rgba(43,124,255,0.25); border-color:var(--blue-bright);}
+  .opt .opt-arrow{opacity:0; transition:opacity .2s ease; color:var(--blue-bright);}
+  .opt:hover .opt-arrow, .opt.selected .opt-arrow{opacity:1;}
+  .quiz-nav{display:flex; justify-content:space-between; align-items:center; margin-top:24px;}
+  .quiz-back{
+    background:none; border:none; color:rgba(255,255,255,0.55); font-size:14px; font-weight:600;
+    cursor:pointer; padding:8px 4px; display:flex; align-items:center; gap:6px;
+  }
+  .quiz-back:hover{color:white;}
+  .quiz-back[disabled]{visibility:hidden;}
+
+  /* result screen */
+  .quiz-result{display:none; padding:36px 32px 36px; text-align:center;}
+  .quiz-result.active{display:block; animation:fadeUp .5s ease forwards;}
+  .score-ring-wrap{position:relative; width:172px; height:172px; margin:6px auto 18px;}
+  .score-ring-wrap svg{transform:rotate(-90deg);}
+  .score-ring-bg{fill:none; stroke:rgba(255,255,255,0.12); stroke-width:10;}
+  .score-ring-fill{fill:none; stroke:var(--amber); stroke-width:10; stroke-linecap:round; stroke-dasharray:440; stroke-dashoffset:440; transition:stroke-dashoffset 1.2s cubic-bezier(.2,.8,.2,1);}
+  .score-center{position:absolute; inset:0; display:flex; flex-direction:column; align-items:center; justify-content:center;}
+  .score-num{font-family:'Fraunces',serif; font-size:44px; font-weight:700; color:white; line-height:1;}
+  .score-label{font-size:11.5px; color:rgba(255,255,255,0.6); letter-spacing:0.05em; text-transform:uppercase; margin-top:4px;}
+  .result-tag{
+    display:inline-block; padding:7px 16px; border-radius:100px; font-size:13px; font-weight:700;
+    margin-bottom:14px; letter-spacing:0.02em;
+  }
+  .result-tag.low{background:rgba(194,65,12,0.2); color:#FF9466;}
+  .result-tag.mid{background:rgba(232,163,61,0.2); color:var(--amber);}
+  .result-tag.high{background:rgba(28,138,92,0.2); color:#4ADE9C;}
+  .quiz-result h3{color:white; font-size:24px; margin-bottom:10px;}
+  .quiz-result p.result-msg{color:rgba(255,255,255,0.72); font-size:15px; max-width:460px; margin:0 auto 26px; line-height:1.6;}
+  .result-breakdown{
+    background:rgba(255,255,255,0.05); border:1px solid rgba(255,255,255,0.1);
+    border-radius:14px; padding:18px 20px; margin-bottom:26px; text-align:left;
+  }
+  .rb-row{display:flex; justify-content:space-between; align-items:center; padding:9px 0; font-size:14px; color:rgba(255,255,255,0.85);}
+  .rb-row:not(:last-child){border-bottom:1px solid rgba(255,255,255,0.08);}
+  .rb-row .rb-icon{margin-right:8px;}
+  .btn-whatsapp{
+    display:inline-flex; align-items:center; justify-content:center; gap:10px; width:100%;
+    background:#25D366; color:#06210F; border:none;
+    padding:18px 24px; border-radius:12px; font-size:16.5px; font-weight:800;
+    cursor:pointer; transition:all .2s ease; box-shadow:0 16px 32px -10px rgba(37,211,102,0.5);
+  }
+  .btn-whatsapp:hover{transform:translateY(-2px); box-shadow:0 20px 38px -10px rgba(37,211,102,0.6); background:#2EE579;}
+  .result-foot{color:rgba(255,255,255,0.4); font-size:12.5px; margin-top:14px;}
+  .restart-link{color:rgba(255,255,255,0.5); font-size:13px; margin-top:16px; display:inline-block; cursor:pointer; text-decoration:underline; text-underline-offset:3px;}
+  .restart-link:hover{color:white;}
+
+  /* ===== SOCIAL PROOF ===== */
+  .proof-grid{display:grid; grid-template-columns:repeat(3,1fr); gap:22px;}
+  .proof-card{
+    background:var(--white); border:1px solid var(--line); border-radius:18px; padding:28px;
+    transition:transform .25s ease, box-shadow .25s ease;
+  }
+  .proof-card:hover{transform:translateY(-5px); box-shadow:var(--shadow);}
+  .proof-top{display:flex; align-items:center; gap:13px; margin-bottom:18px;}
+  .proof-avatar{
+    width:48px; height:48px; border-radius:50%; flex-shrink:0;
+    background:linear-gradient(135deg, var(--blue) 0%, var(--navy) 100%);
+    display:flex; align-items:center; justify-content:center; color:white; font-weight:700; font-size:16px;
+  }
+  .proof-name{font-weight:700; font-size:15px; color:var(--ink);}
+  .proof-role{font-size:13px; color:var(--slate);}
+  .proof-quote{font-size:14.5px; color:#374055; line-height:1.6; margin-bottom:20px;}
+  .proof-arrow-box{
+    display:flex; align-items:center; justify-content:space-between;
+    background:var(--paper); border-radius:12px; padding:14px 16px; font-size:13px;
+  }
+  .proof-before{color:var(--slate);}
+  .proof-after{color:var(--good); font-weight:700;}
+  .proof-arrow{color:var(--blue);}
+
+  /* ===== URGENCY ===== */
+  .urgency-section{
+    background:linear-gradient(180deg, var(--navy-deep) 0%, var(--navy) 100%);
+    color:white; text-align:center; position:relative; overflow:hidden;
+  }
+  .urgency-section::before{
+    content:''; position:absolute; inset:0;
+    background:radial-gradient(600px 300px at 50% 0%, rgba(43,124,255,0.25), transparent 70%);
+  }
+  .urgency-inner{position:relative; z-index:1;}
+  .urgency-section .eyebrow{background:rgba(255,255,255,0.08); border-color:rgba(255,255,255,0.2); color:var(--amber);}
+  .urgency-section .eyebrow .dot{background:var(--amber);}
+  .urgency-section h2{color:white; max-width:620px; margin:18px auto 14px;}
+  .urgency-section p.lead{color:rgba(255,255,255,0.65); max-width:560px; margin:0 auto 40px; font-size:16px;}
+  .countdown{display:flex; justify-content:center; gap:14px; margin-bottom:40px; flex-wrap:wrap;}
+  .cd-box{
+    background:rgba(255,255,255,0.06); border:1px solid rgba(255,255,255,0.15);
+    border-radius:14px; padding:18px 22px; min-width:88px;
+  }
+  .cd-num{font-family:'Fraunces',serif; font-size:34px; font-weight:700; color:var(--amber); line-height:1; font-variant-numeric:tabular-nums;}
+  .cd-label{font-size:11px; letter-spacing:0.06em; text-transform:uppercase; color:rgba(255,255,255,0.5); margin-top:6px;}
+  .regret-row{display:grid; grid-template-columns:repeat(3,1fr); gap:18px; max-width:760px; margin:0 auto;}
+  .regret-card{background:rgba(255,255,255,0.04); border:1px solid rgba(255,255,255,0.1); border-radius:14px; padding:20px; text-align:left;}
+  .regret-card .num{color:var(--amber); font-weight:800; font-size:13px; margin-bottom:8px; display:block;}
+  .regret-card p{color:rgba(255,255,255,0.75); font-size:14px; line-height:1.55;}
+
+  /* ===== FINAL CTA ===== */
+  .final-cta{
+    background:var(--white);
+    text-align:center;
+  }
+  .final-card{
+    max-width:760px; margin:0 auto; background:linear-gradient(135deg, var(--blue) 0%, var(--navy) 100%);
+    border-radius:26px; padding:56px 40px; color:white; position:relative; overflow:hidden;
+    box-shadow:0 30px 70px -25px rgba(11,30,61,0.5);
+  }
+  .final-card::after{
+    content:''; position:absolute; width:340px; height:340px; border-radius:50%;
+    background:rgba(255,255,255,0.06); top:-160px; right:-100px;
+  }
+  .final-card h2{color:white; font-size:clamp(26px,3.2vw,34px); margin-bottom:14px; position:relative;}
+  .final-card p{color:rgba(255,255,255,0.78); font-size:16px; max-width:480px; margin:0 auto 30px; position:relative;}
+  .final-btns{display:flex; gap:14px; justify-content:center; flex-wrap:wrap; position:relative;}
+  .btn-wa-final{
+    display:inline-flex; align-items:center; gap:10px; background:#25D366; color:#06210F;
+    border:none; padding:17px 30px; border-radius:11px; font-weight:800; font-size:16px; cursor:pointer;
+    box-shadow:0 14px 30px -10px rgba(37,211,102,0.55); transition:all .2s ease;
+  }
+  .btn-wa-final:hover{transform:translateY(-2px); background:#2EE579;}
+  .btn-secondary-final{
+    display:inline-flex; align-items:center; gap:8px; background:rgba(255,255,255,0.1); color:white;
+    border:1px solid rgba(255,255,255,0.3); padding:17px 26px; border-radius:11px; font-weight:600; font-size:15px;
+    cursor:pointer; transition:all .2s ease;
+  }
+  .btn-secondary-final:hover{background:rgba(255,255,255,0.18);}
+  .trust-strip{display:flex; justify-content:center; gap:28px; margin-top:36px; flex-wrap:wrap; color:var(--slate); font-size:13px;}
+  .trust-strip span{display:flex; align-items:center; gap:7px;}
+
+  /* ===== FOOTER ===== */
+  footer{background:var(--navy-deep); color:rgba(255,255,255,0.55); padding:40px 0 28px; font-size:13px;}
+  .footer-inner{display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:16px;}
+  .footer-links{display:flex; gap:22px; flex-wrap:wrap;}
+  .footer-links a{color:rgba(255,255,255,0.55); text-decoration:none;}
+  .footer-links a:hover{color:white;}
+  .footer-disclosure{max-width:1120px; margin:24px auto 0; padding:0 24px; font-size:11.5px; color:rgba(255,255,255,0.32); line-height:1.6; border-top:1px solid rgba(255,255,255,0.08); padding-top:20px;}
+
+  /* ===== STICKY MOBILE CTA ===== */
+  .sticky-cta{
+    display:none; position:fixed; bottom:0; left:0; right:0; z-index:200;
+    background:var(--white); border-top:1px solid var(--line); padding:12px 16px;
+    box-shadow:0 -10px 30px -10px rgba(0,0,0,0.15);
+  }
+  .sticky-cta button{
+    width:100%; background:var(--navy); color:white; border:none; padding:15px; border-radius:11px;
+    font-weight:700; font-size:15px; cursor:pointer;
+  }
+
+  /* ===== RESPONSIVE ===== */
+  @media (max-width:860px){
+    .hero-grid{grid-template-columns:1fr; gap:36px;}
+    .proof-grid{grid-template-columns:1fr;}
+    .regret-row{grid-template-columns:1fr;}
+    section{padding:60px 0;}
+    .quiz-body{padding:0 22px 26px;}
+    .quiz-top{padding:24px 22px 0;}
+    .sticky-cta{display:block;}
+    body{padding-bottom:74px;}
+    .nav-cta{display:none;}
+    .footer-inner{flex-direction:column; align-items:flex-start;}
+  }
+  @media (max-width:480px){
+    .cd-box{min-width:70px; padding:14px 12px;}
+    .cd-num{font-size:26px;}
+    .final-card{padding:40px 22px;}
+  }
+
+  @media (prefers-reduced-motion: reduce){
+    *{animation-duration:0.01ms !important; transition-duration:0.01ms !important;}
+  }
+</style>
+</head>
+<body>
+
+<!-- ===== NAV ===== -->
+<nav class="nav">
+  <div class="nav-inner container">
+    <div class="logo"><div class="logo-mark">IA</div>GradTech</div>
+    <button class="nav-cta" onclick="scrollToQuiz()">Check Eligibility</button>
+  </div>
+</nav>
+
+<!-- ===== HERO ===== -->
+<section class="hero">
+  <div class="container hero-grid">
+    <div>
+      <span class="eyebrow"><span class="dot"></span>For Indian Engineers Working in UAE</span>
+      <h1>Still a <span class="accent">Technician</span> after 5 years in UAE?<br>That's not luck. That's a missing credential.</h1>
+      <p class="hero-sub">Most companies don't reject your <strong>experience</strong> — they reject your <strong>file</strong>. GradTech is IAPL Institute's industry-recognised Mechanical Engineering certificate programme, built for working professionals who can't pause their job — or their visa — to study full-time.</p>
+      <button class="btn-primary" onclick="scrollToQuiz()">
+        Check Your Eligibility Now
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M5 12h14M13 6l6 6-6 6" stroke="white" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </button>
+      <div class="hero-urgency">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M12 9v4M12 17h.01M10.3 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.7 3.86a2 2 0 0 0-3.4 0z" stroke="#C2410C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <span>March intake seats are filling by profile type — check where you stand before they close.</span>
+      </div>
+      <div class="hero-stats">
+        <div><div class="hero-stat-num">2-4 yrs</div><div class="hero-stat-label">Flexible duration</div></div>
+        <div><div class="hero-stat-num">AED 7,490</div><div class="hero-stat-label">Total programme fee</div></div>
+        <div><div class="hero-stat-num">100%</div><div class="hero-stat-label">Online, around shifts</div></div>
+      </div>
+    </div>
+
+    <div class="hero-card">
+      <div class="hero-card-badge">60-second check</div>
+      <h3>Your Eligibility Snapshot</h3>
+      <p class="small">Based on profiles assessed this month</p>
+      <div class="mini-row"><span class="label">Qualification on file</span><span class="val">Diploma / Experience</span></div>
+      <div class="mini-row"><span class="label">Years in UAE workforce</span><span class="val">2-5 yrs</span></div>
+      <div class="mini-row"><span class="label">Target outcome</span><span class="val">Promotion / Higher pay</span></div>
+      <div class="progress-track"><div class="progress-fill"></div></div>
+      <p class="small" style="margin-bottom:0;">Profiles like this are typically <strong style="color:var(--navy)">eligible</strong> — get your exact score below.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ===== QUIZ SECTION ===== -->
+<section class="quiz-section" id="quiz">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow"><span class="dot"></span>Free Eligibility Assessment</span>
+      <h2>Where do you actually stand?</h2>
+      <p>4 quick questions. No payment, no obligation — just clarity on your eligibility and what it could mean for your next promotion cycle.</p>
+    </div>
+
+    <div class="quiz-wrap">
+      <div class="quiz-top">
+        <div class="quiz-top-row">
+          <span class="quiz-step-label" id="stepLabel">Question 1 of 4</span>
+          <span class="quiz-score-preview" id="scorePreview"></span>
+        </div>
+        <div class="quiz-bar-track"><div class="quiz-bar-fill" id="barFill"></div></div>
+      </div>
+
+      <div class="quiz-body">
+
+        <!-- Q1: Qualification -->
+        <div class="quiz-q active" data-step="1">
+          <h3>What's your current highest qualification?</h3>
+          <p class="q-sub">This determines your entry route into GradTech.</p>
+          <div class="opt-grid">
+            <button class="opt" data-q="1" data-val="diploma" data-points="30">Diploma / ITI in a technical field<span class="opt-arrow">→</span></button>
+            <button class="opt" data-q="1" data-val="12th" data-points="20">12th / Higher Secondary (Science)<span class="opt-arrow">→</span></button>
+            <button class="opt" data-q="1" data-val="degree" data-points="35">Bachelor's degree (any stream)<span class="opt-arrow">→</span></button>
+            <button class="opt" data-q="1" data-val="none" data-points="10">No formal technical qualification<span class="opt-arrow">→</span></button>
+          </div>
+        </div>
+
+        <!-- Q2: Years in UAE -->
+        <div class="quiz-q" data-step="2">
+          <h3>How long have you been working in UAE?</h3>
+          <p class="q-sub">Experience can offset formal qualification gaps under Route C.</p>
+          <div class="opt-grid">
+            <button class="opt" data-q="2" data-val="0-2" data-points="10">Less than 2 years<span class="opt-arrow">→</span></button>
+            <button class="opt" data-q="2" data-val="2-5" data-points="25">2 - 5 years<span class="opt-arrow">→</span></button>
+            <button class="opt" data-q="2" data-val="5-10" data-points="30">5 - 10 years<span class="opt-arrow">→</span></button>
+            <button class="opt" data-q="2" data-val="10+" data-points="25">10+ years<span class="opt-arrow">→</span></button>
+          </div>
+        </div>
+
+        <!-- Q3: Career goal -->
+        <div class="quiz-q" data-step="3">
+          <h3>What's the outcome you actually want?</h3>
+          <p class="q-sub">This shapes which electives and pathway we'd recommend.</p>
+          <div class="opt-grid">
+            <button class="opt" data-q="3" data-val="promotion" data-points="25">Promotion into an Engineer-level role<span class="opt-arrow">→</span></button>
+            <button class="opt" data-q="3" data-val="salary" data-points="25">Higher salary in my current role<span class="opt-arrow">→</span></button>
+            <button class="opt" data-q="3" data-val="visa" data-points="20">Stronger visa / job security<span class="opt-arrow">→</span></button>
+            <button class="opt" data-q="3" data-val="switch" data-points="20">Switch industries or companies<span class="opt-arrow">→</span></button>
+          </div>
+        </div>
+
+        <!-- Q4: Current role -->
+        <div class="quiz-q" data-step="4">
+          <h3>What best describes your current role?</h3>
+          <p class="q-sub">Last one — this helps us gauge how directly GradTech applies to your daily work.</p>
+          <div class="opt-grid">
+            <button class="opt" data-q="4" data-val="technician" data-points="25">Technician / Maintenance / Operator<span class="opt-arrow">→</span></button>
+            <button class="opt" data-q="4" data-val="supervisor" data-points="25">Supervisor / Site Lead<span class="opt-arrow">→</span></button>
+            <button class="opt" data-q="4" data-val="support" data-points="20">Technical Support / Junior Engineer<span class="opt-arrow">→</span></button>
+            <button class="opt" data-q="4" data-val="other" data-points="15">Other technical / industrial role<span class="opt-arrow">→</span></button>
+          </div>
+        </div>
+
+        <div class="quiz-nav">
+          <button class="quiz-back" id="backBtn" onclick="goBack()">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M19 12H5M11 18l-6-6 6-6" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            Back
+          </button>
+        </div>
+      </div>
+
+      <!-- RESULT SCREEN -->
+      <div class="quiz-result" id="resultScreen">
+        <div class="score-ring-wrap">
+          <svg width="172" height="172" viewBox="0 0 172 172">
+            <circle class="score-ring-bg" cx="86" cy="86" r="70"></circle>
+            <circle class="score-ring-fill" id="scoreRing" cx="86" cy="86" r="70"></circle>
+          </svg>
+          <div class="score-center">
+            <div class="score-num" id="scoreNum">0%</div>
+            <div class="score-label">Eligibility</div>
+          </div>
+        </div>
+
+        <div id="resultTagWrap"></div>
+        <h3 id="resultHeadline">Calculating...</h3>
+        <p class="result-msg" id="resultMsg"></p>
+
+        <div class="result-breakdown">
+          <div class="rb-row"><span><span class="rb-icon">📋</span>Qualification</span><span id="rbQual">—</span></div>
+          <div class="rb-row"><span><span class="rb-icon">📍</span>UAE Experience</span><span id="rbExp">—</span></div>
+          <div class="rb-row"><span><span class="rb-icon">🎯</span>Goal</span><span id="rbGoal">—</span></div>
+          <div class="rb-row"><span><span class="rb-icon">⚙️</span>Recommended Route</span><span id="rbRoute">—</span></div>
+        </div>
+
+        <button class="btn-whatsapp" id="waResultBtn" onclick="sendToWhatsApp()">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="#06210F"><path d="M17.6 6.32A8.86 8.86 0 0012.05 4a8.94 8.94 0 00-7.74 13.4L3 21l3.7-1.27a8.93 8.93 0 004.33 1.1h0a8.94 8.94 0 008.94-8.93 8.88 8.88 0 00-2.37-5.58zm-5.55 13.7a7.4 7.4 0 01-3.78-1.04l-.27-.16-2.8.96.94-2.73-.18-.28a7.43 7.43 0 1113.8-3.93 7.45 7.45 0 01-7.71 7.18zm4.08-5.56c-.22-.11-1.31-.65-1.52-.72-.2-.08-.35-.11-.5.11s-.57.72-.7.87-.26.17-.48.06a6.06 6.06 0 01-1.78-1.1 6.65 6.65 0 01-1.23-1.53c-.13-.22 0-.34.1-.45.1-.1.22-.26.33-.39.11-.13.15-.22.22-.37a.4.4 0 010-.39c-.06-.11-.5-1.2-.68-1.65-.18-.43-.36-.37-.5-.38h-.43a.82.82 0 00-.6.28 2.5 2.5 0 00-.78 1.86 4.34 4.34 0 00.91 2.3 9.95 9.95 0 003.8 3.36c.53.23.94.36 1.26.47.53.17 1.01.14 1.39.09.42-.06 1.31-.53 1.5-1.05.18-.51.18-.95.13-1.04-.05-.1-.2-.16-.42-.27z"/></svg>
+          Get My Full Report on WhatsApp
+        </button>
+        <p class="result-foot">Sends your score + a personalised note directly to a Student Advisor. No spam, no auto-calls.</p>
+        <span class="restart-link" onclick="restartQuiz()">Retake the assessment</span>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ===== SOCIAL PROOF ===== -->
+<section class="proof-section">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow"><span class="dot"></span>Real Outcomes</span>
+      <h2>They were exactly where you are now</h2>
+      <p>Three GradTech graduates, three different starting points — all stuck before they checked their eligibility.</p>
+    </div>
+    <div class="proof-grid">
+
+      <div class="proof-card">
+        <div class="proof-top">
+          <div class="proof-avatar">KM</div>
+          <div><div class="proof-name">Khalid Al-Mansouri</div><div class="proof-role">Oil & Gas, Abu Dhabi</div></div>
+        </div>
+        <p class="proof-quote">"Six years as a maintenance technician, good at the job, stuck on paper. The online format worked around my shift rotations — that was the whole reason I could actually finish it."</p>
+        <div class="proof-arrow-box">
+          <span class="proof-before">Maintenance Technician</span>
+          <span class="proof-arrow">→</span>
+          <span class="proof-after">+38% salary, 8 months</span>
+        </div>
+      </div>
+
+      <div class="proof-card">
+        <div class="proof-top">
+          <div class="proof-avatar">PN</div>
+          <div><div class="proof-name">Preethi Nair</div><div class="proof-role">Automotive, Chennai</div></div>
+        </div>
+        <p class="proof-quote">"The industry project in Stage 2 was with a real automotive supplier. My manager liked the work enough to offer me a full-time role before I'd even finished the programme."</p>
+        <div class="proof-arrow-box">
+          <span class="proof-before">Diploma holder</span>
+          <span class="proof-arrow">→</span>
+          <span class="proof-after">Hired before graduating</span>
+        </div>
+      </div>
+
+      <div class="proof-card">
+        <div class="proof-top">
+          <div class="proof-avatar">JW</div>
+          <div><div class="proof-name">James Whitfield</div><div class="proof-role">Engineering Consultancy, UK</div></div>
+        </div>
+        <p class="proof-quote">"I wasn't ready to commit to three years on campus. Studying around a part-time job, my employer actually started sponsoring my fees once they saw the change in my work."</p>
+        <div class="proof-arrow-box">
+          <span class="proof-before">Junior Design Engineer</span>
+          <span class="proof-arrow">→</span>
+          <span class="proof-after">Team Lead at 26</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ===== URGENCY SECTION ===== -->
+<section class="urgency-section">
+  <div class="container urgency-inner">
+    <span class="eyebrow"><span class="dot"></span>The Cost of Waiting</span>
+    <h2>Every cycle you skip is a promotion someone else gets</h2>
+    <p class="lead">March intake registration closes 2 weeks before the cohort starts. Most people who say "I'll check this next month" are still saying it a year later — not because they don't qualify, but because they never found out.</p>
+
+    <div class="countdown" id="countdown">
+      <div class="cd-box"><div class="cd-num" id="cd-days">--</div><div class="cd-label">Days</div></div>
+      <div class="cd-box"><div class="cd-num" id="cd-hours">--</div><div class="cd-label">Hours</div></div>
+      <div class="cd-box"><div class="cd-num" id="cd-mins">--</div><div class="cd-label">Mins</div></div>
+      <div class="cd-box"><div class="cd-num" id="cd-secs">--</div><div class="cd-label">Secs</div></div>
+    </div>
+    <p style="font-size:12.5px; color:rgba(255,255,255,0.4); margin-top:-26px; margin-bottom:40px;">Until March intake registration closes</p>
+
+    <div class="regret-row">
+      <div class="regret-card"><span class="num">01</span><p>The technicians who waited "one more year" usually waited three — and watched colleagues with less experience get promoted past them.</p></div>
+      <div class="regret-card"><span class="num">02</span><p>Visa renewal cycles don't pause for you to decide. A stronger qualification on file changes the conversation before it happens.</p></div>
+      <div class="regret-card"><span class="num">03</span><p>Checking your eligibility costs nothing and takes a minute. Not checking has cost real candidates real promotion cycles.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FINAL CTA ===== -->
+<section class="final-cta">
+  <div class="container">
+    <div class="final-card">
+      <h2>You already know you're capable.<br>Find out if you're eligible.</h2>
+      <p>Takes 60 seconds. Your result goes straight to a Student Advisor on WhatsApp — ask anything, no pressure.</p>
+      <div class="final-btns">
+        <button class="btn-wa-final" onclick="scrollToQuiz()">
+          <svg width="19" height="19" viewBox="0 0 24 24" fill="#06210F"><path d="M17.6 6.32A8.86 8.86 0 0012.05 4a8.94 8.94 0 00-7.74 13.4L3 21l3.7-1.27a8.93 8.93 0 004.33 1.1h0a8.94 8.94 0 008.94-8.93 8.88 8.88 0 00-2.37-5.58zm-5.55 13.7a7.4 7.4 0 01-3.78-1.04l-.27-.16-2.8.96.94-2.73-.18-.28a7.43 7.43 0 1113.8-3.93 7.45 7.45 0 01-7.71 7.18z"/></svg>
+          Check My Eligibility Now
+        </button>
+        <button class="btn-secondary-final" onclick="window.location.href='mailto:admissions@iaplinstitute.com'">
+          Email Admissions Instead
+        </button>
+      </div>
+    </div>
+    <div class="trust-strip">
+      <span>✓ ICDE Institutional Member Network</span>
+      <span>✓ Named Student Advisor</span>
+      <span>✓ No-obligation assessment</span>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer>
+  <div class="container footer-inner">
+    <div class="logo" style="color:white;"><div class="logo-mark">IA</div>GradTech · IAPL Institute</div>
+    <div class="footer-links">
+      <a href="mailto:info@iaplinstitute.com">info@iaplinstitute.com</a>
+      <a href="mailto:admissions@iaplinstitute.com">Admissions</a>
+      <a href="mailto:scholarships@iaplinstitute.com">Scholarships</a>
+    </div>
+  </div>
+  <div class="footer-disclosure">
+    GradTech is a professional certificate programme offered by IAPL Institute (International Academy of Professional Learning) for working professionals in Engineering disciplines. IAPL Institute is an accredited institutional member of ICDE (International Council for Open and Distance Education, icde.org) — a UNESCO Category II membership network for distance-education providers. This is a certificate programme, not a university degree; IAPL Institute is not a college or university and does not award degrees. Outcomes shown are individual graduate accounts and are not guaranteed. Fees and intake dates are indicative — confirm current details with your regional Student Advisor before enrolling.
+  </div>
+</footer>
+
+<!-- ===== STICKY MOBILE CTA ===== -->
+<div class="sticky-cta">
+  <button onclick="scrollToQuiz()">Check Your Eligibility Now →</button>
+</div>
+
+<script>
+  // ---------- NAV / SCROLL ----------
+  function scrollToQuiz(){
+    document.getElementById('quiz').scrollIntoView({behavior:'smooth', block:'start'});
+  }
+
+  // ---------- QUIZ LOGIC ----------
+  const totalSteps = 4;
+  let currentStep = 1;
+  const answers = {}; // {1: {val, points, label}, 2: {...}, ...}
+
+  const qLabels = {
+    1: { diploma:"Diploma / ITI", "12th":"12th / Higher Secondary", degree:"Bachelor's Degree", none:"No formal qualification" },
+    2: { "0-2":"Less than 2 yrs", "2-5":"2–5 yrs", "5-10":"5–10 yrs", "10+":"10+ yrs" },
+    3: { promotion:"Promotion", salary:"Higher Salary", visa:"Visa / Job Security", switch:"Industry Switch" },
+    4: { technician:"Technician / Maintenance", supervisor:"Supervisor / Site Lead", support:"Technical Support / Jr. Engineer", other:"Other Technical Role" }
+  };
+
+  document.querySelectorAll('.opt').forEach(btn=>{
+    btn.addEventListener('click', function(){
+      const q = this.dataset.q;
+      const val = this.dataset.val;
+      const points = parseInt(this.dataset.points, 10);
+
+      // visually mark selected within this question group
+      document.querySelectorAll('.quiz-q[data-step="'+q+'"] .opt').forEach(o=>o.classList.remove('selected'));
+      this.classList.add('selected');
+
+      answers[q] = { val, points, label: qLabels[q][val] };
+
+      updateScorePreview();
+
+      setTimeout(()=>{
+        if(currentStep < totalSteps){
+          currentStep++;
+          renderStep();
+        } else {
+          showResult();
+        }
+      }, 280);
+    });
+  });
+
+  function updateScorePreview(){
+    const answered = Object.keys(answers).length;
+    if(answered === 0){ document.getElementById('scorePreview').textContent = ''; return; }
+    let sum = 0;
+    Object.values(answers).forEach(a=> sum += a.points);
+    // scale partial progress for preview feel
+    const maxPossiblePartial = answered * 35;
+    const pct = Math.round((sum / maxPossiblePartial) * 100);
+    document.getElementById('scorePreview').textContent = 'Trending: ' + Math.min(pct,99) + '%';
+  }
+
+  function renderStep(){
+    document.querySelectorAll('.quiz-q').forEach(q=>q.classList.remove('active'));
+    const stepEl = document.querySelector('.quiz-q[data-step="'+currentStep+'"]');
+    stepEl.classList.add('active');
+    document.getElementById('stepLabel').textContent = 'Question ' + currentStep + ' of ' + totalSteps;
+    document.getElementById('barFill').style.width = ((currentStep-1)/totalSteps*100) + '%';
+    document.getElementById('backBtn').disabled = currentStep === 1;
+  }
+
+  function goBack(){
+    if(currentStep > 1){
+      currentStep--;
+      renderStep();
+    }
+  }
+
+  function restartQuiz(){
+    currentStep = 1;
+    Object.keys(answers).forEach(k=>delete answers[k]);
+    document.querySelectorAll('.opt').forEach(o=>o.classList.remove('selected'));
+    document.getElementById('resultScreen').classList.remove('active');
+    document.querySelector('.quiz-body').style.display = 'block';
+    document.getElementById('scorePreview').textContent = '';
+    renderStep();
+  }
+
+  function showResult(){
+    document.getElementById('barFill').style.width = '100%';
+    document.querySelector('.quiz-body').style.display = 'none';
+    const resultScreen = document.getElementById('resultScreen');
+    resultScreen.classList.add('active');
+
+    // ---- SCORE CALCULATION ----
+    // Max raw points: Q1(35) + Q2(30) + Q3(25) + Q4(25) = 115
+    let raw = 0;
+    Object.values(answers).forEach(a => raw += a.points);
+    const maxRaw = 115;
+    let score = Math.round((raw / maxRaw) * 100);
+    score = Math.max(38, Math.min(96, score)); // keep within a believable, non-zero, non-perfect band
+
+    // Animate ring
+    const circumference = 440;
+    const offset = circumference - (circumference * score / 100);
+    setTimeout(()=>{
+      document.getElementById('scoreRing').style.strokeDashoffset = offset;
+    }, 150);
+
+    // Animate number count-up
+    animateCount(document.getElementById('scoreNum'), score);
+
+    // Tag + headline + message by band
+    const tagWrap = document.getElementById('resultTagWrap');
+    const headline = document.getElementById('resultHeadline');
+    const msg = document.getElementById('resultMsg');
+
+    let tagClass, tagText, headlineText, msgText;
+    if(score < 55){
+      tagClass = 'low'; tagText = '⚠ Action Needed';
+      headlineText = 'You qualify — but you\'re at risk of falling further behind.';
+      msgText = 'Your profile shows real potential, but on paper you currently look similar to candidates with fewer years of experience. Every cycle without a recognised qualification narrows your promotion window further. Route C (Mature/Experienced entry) is likely open to you — an advisor can confirm in minutes.';
+    } else if(score < 78){
+      tagClass = 'mid'; tagText = '↑ Strong Opportunity';
+      headlineText = 'You\'re a strong fit — this is your improvement window.';
+      msgText = 'Your qualification and experience combination puts you in a solid position for GradTech entry. Candidates with a similar profile typically see the clearest jump from "Technician" to "Engineer" titles within 18 months of starting. Worth a 10-minute conversation with an advisor before the March intake fills.';
+    } else {
+      tagClass = 'high'; tagText = '🎯 Near-Ideal Fit';
+      headlineText = 'You\'re exactly the profile this programme was built for.';
+      msgText = 'Your experience and goals line up closely with our strongest GradTech outcomes — the kind of profile that\'s often closest to a promotion decision already, just missing the credential to make the case formally. Don\'t let this sit in a "maybe later" folder.';
+    }
+
+    tagWrap.innerHTML = '<span class="result-tag '+tagClass+'">'+tagText+'</span>';
+    headline.textContent = headlineText;
+    msg.textContent = msgText;
+
+    // Breakdown
+    document.getElementById('rbQual').textContent = answers[1] ? answers[1].label : '—';
+    document.getElementById('rbExp').textContent = answers[2] ? answers[2].label : '—';
+    document.getElementById('rbGoal').textContent = answers[3] ? answers[3].label : '—';
+
+    let route = 'Route A — School Leaver';
+    if(answers[1] && answers[1].val === 'diploma') route = 'Route B — Diploma Holder';
+    if((answers[1] && (answers[1].val === 'none' || answers[1].val === '12th')) && answers[2] && (answers[2].val === '5-10' || answers[2].val === '10+')) route = 'Route C — Mature / Experienced';
+    if(answers[1] && answers[1].val === 'degree') route = 'Route B — Diploma/Degree Holder';
+    document.getElementById('rbRoute').textContent = route;
+
+    window.currentScore = score;
+    window.currentRoute = route;
+  }
+
+  function animateCount(el, target){
+    let current = 0;
+    const duration = 1200;
+    const stepTime = 16;
+    const steps = duration / stepTime;
+    const increment = target / steps;
+    const timer = setInterval(()=>{
+      current += increment;
+      if(current >= target){
+        current = target;
+        clearInterval(timer);
+      }
+      el.textContent = Math.round(current) + '%';
+    }, stepTime);
+  }
+
+  // ---------- WHATSAPP CTA ----------
+  function sendToWhatsApp(){
+    const score = window.currentScore || 0;
+    const route = window.currentRoute || 'Not assessed';
+    const qual = answers[1] ? answers[1].label : 'N/A';
+    const exp = answers[2] ? answers[2].label : 'N/A';
+    const goal = answers[3] ? answers[3].label : 'N/A';
+    const role = answers[4] ? answers[4].label : 'N/A';
+
+    const message =
+`Hi! I just completed the GradTech Eligibility Check.
+
+My Eligibility Score: ${score}%
+Recommended Route: ${route}
+
+My profile:
+- Qualification: ${qual}
+- UAE Experience: ${exp}
+- Career Goal: ${goal}
+- Current Role: ${role}
+
+Can I get my full report and next steps?`;
+
+    const encodedMsg = encodeURIComponent(message);
+    const whatsappNumber = "917600526638"; // IAPL Institute WhatsApp
+    const url = `https://api.whatsapp.com/send?phone=${whatsappNumber}&text=${encodedMsg}`;
+    window.open(url, '_blank');
+  }
+
+  // ---------- COUNTDOWN TIMER ----------
+  function getNextRegistrationDeadline(){
+    const now = new Date();
+    const year = now.getFullYear();
+    // March intake — registration closes 2 weeks before start; assume cohort starts March 1
+    let deadline = new Date(year, 1, 15, 23, 59, 59); // Feb 15
+    if(now > deadline){
+      deadline = new Date(year + 1, 1, 15, 23, 59, 59);
+    }
+    return deadline;
+  }
+
+  function updateCountdown(){
+    const deadline = getNextRegistrationDeadline();
+    const now = new Date();
+    let diff = deadline - now;
+
+    if(diff < 0) diff = 0;
+
+    const days = Math.floor(diff / (1000*60*60*24));
+    const hours = Math.floor((diff % (1000*60*60*24)) / (1000*60*60));
+    const mins = Math.floor((diff % (1000*60*60)) / (1000*60));
+    const secs = Math.floor((diff % (1000*60)) / 1000);
+
+    document.getElementById('cd-days').textContent = String(days).padStart(2,'0');
+    document.getElementById('cd-hours').textContent = String(hours).padStart(2,'0');
+    document.getElementById('cd-mins').textContent = String(mins).padStart(2,'0');
+    document.getElementById('cd-secs').textContent = String(secs).padStart(2,'0');
+  }
+  updateCountdown();
+  setInterval(updateCountdown, 1000);
+
+  // init
+  renderStep();
+</script>
+
+</body>
+</html>
